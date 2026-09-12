@@ -4,7 +4,6 @@ import {
     provideBrowserGlobalErrorListeners,
     provideZonelessChangeDetection,
 } from '@angular/core';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import type { NativeFederationResult } from '@angular-architects/native-federation';
 import { createRoutes } from './app.routes';
@@ -15,7 +14,6 @@ export const createAppConfig = (federation: NativeFederationResult): Application
     providers: [
         provideBrowserGlobalErrorListeners(),
         provideZonelessChangeDetection(),
-        provideAnimationsAsync(),
         { provide: NATIVE_FEDERATION, useValue: federation },
         provideRouter(createRoutes(federation), withComponentInputBinding()),
     ],

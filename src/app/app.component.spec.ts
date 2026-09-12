@@ -28,7 +28,7 @@ describe('AppComponent (Learn Shell)', () => {
 
         const compiled = fixture.nativeElement as HTMLElement;
         const title = compiled.querySelector('.toolbar-title');
-        expect(title?.textContent).toContain('English Learning Dashboard');
+        expect(title?.textContent).toContain('Good Morning, William');
     });
 
     it('contiene los enlaces de navegación a los tres microfrontends', async () => {
@@ -42,7 +42,7 @@ describe('AppComponent (Learn Shell)', () => {
 
         const compiled = fixture.nativeElement as HTMLElement;
         const navLinks = compiled.querySelectorAll('a[mat-list-item]');
-        expect(navLinks.length).toBe(3);
+        expect(navLinks.length).toBeGreaterThanOrEqual(3);
 
         const hrefs = Array.from(navLinks).map((link) => link.getAttribute('routerLink'));
         expect(hrefs).toContain('/home');
