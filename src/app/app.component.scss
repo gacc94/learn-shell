@@ -1,0 +1,109 @@
+.dashboard-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.dashboard-sidenav {
+  width: 16rem;
+  border-right: 1px solid var(--mat-sys-outline-variant, #c4c7c5);
+  background: var(--mat-sys-surface-container-low, #f7f9f7);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  border-bottom: 1px solid var(--mat-sys-outline-variant, #c4c7c5);
+
+  .brand-icon {
+    color: var(--mat-sys-primary, #006a6a);
+    font-size: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .brand-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--mat-sys-on-surface, #191c1a);
+  }
+}
+
+.nav-list {
+  padding-top: 0.75rem;
+
+  a[mat-list-item] {
+    margin: 0.25rem 0.75rem;
+    border-radius: 8px;
+    color: var(--mat-sys-on-surface-variant, #404944);
+    transition: background 0.15s ease-in-out;
+
+    &:hover {
+      background: var(--mat-sys-surface-container-highest, #e2e3e1);
+    }
+
+    &.active-link {
+      background: var(--mat-sys-secondary-container, #cce8e7);
+      color: var(--mat-sys-on-secondary-container, #051f1f);
+      font-weight: 600;
+
+      mat-icon {
+        color: var(--mat-sys-on-secondary-container, #051f1f);
+      }
+    }
+  }
+}
+
+.dashboard-content-area {
+  display: flex;
+  flex-direction: column;
+  background: var(--mat-sys-surface, #fbfdf9);
+}
+
+.dashboard-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  .toolbar-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+
+  .toolbar-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  outline: none;
+}
+
+.menu-toggle-btn {
+  display: none;
+}
+
+/* Reglas adaptables para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-toggle-btn {
+    display: inline-flex;
+  }
+
+  .dashboard-sidenav {
+    width: 14rem;
+  }
+}
