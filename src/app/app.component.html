@@ -1,73 +1,58 @@
 <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
 <mat-sidenav-container class="dashboard-container">
-  <!-- Menú lateral accesible -->
-  <mat-sidenav
-    #sidenav
-    mode="side"
-    [opened]="true"
-    class="dashboard-sidenav"
-    aria-label="Menú principal de navegación"
-  >
-    <div class="sidenav-brand">
-      <mat-icon class="brand-icon" aria-hidden="true">school</mat-icon>
-      <span class="brand-title">Learn English</span>
-    </div>
+    <!-- Menú lateral accesible -->
+    <mat-sidenav
+        #sidenav
+        mode="side"
+        [opened]="true"
+        class="dashboard-sidenav"
+        aria-label="Menú principal de navegación"
+    >
+        <div class="sidenav-brand">
+            <mat-icon class="brand-icon" aria-hidden="true">school</mat-icon>
+            <span class="brand-title">Learn English</span>
+        </div>
 
-    <mat-nav-list class="nav-list">
-      <a
-        mat-list-item
-        routerLink="/home"
-        routerLinkActive="active-link"
-        (click)="closeMobileMenu()"
-      >
-        <mat-icon matListItemIcon aria-hidden="true">dashboard</mat-icon>
-        <span matListItemTitle>Inicio</span>
-      </a>
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/home" routerLinkActive="active-link" (click)="closeMobileMenu()">
+                <mat-icon matListItemIcon aria-hidden="true">dashboard</mat-icon>
+                <span matListItemTitle>Inicio</span>
+            </a>
 
-      <a
-        mat-list-item
-        routerLink="/shadowing"
-        routerLinkActive="active-link"
-        (click)="closeMobileMenu()"
-      >
-        <mat-icon matListItemIcon aria-hidden="true">record_voice_over</mat-icon>
-        <span matListItemTitle>Shadowing</span>
-      </a>
+            <a mat-list-item routerLink="/shadowing" routerLinkActive="active-link" (click)="closeMobileMenu()">
+                <mat-icon matListItemIcon aria-hidden="true">record_voice_over</mat-icon>
+                <span matListItemTitle>Shadowing</span>
+            </a>
 
-      <a
-        mat-list-item
-        routerLink="/grammar"
-        routerLinkActive="active-link"
-        (click)="closeMobileMenu()"
-      >
-        <mat-icon matListItemIcon aria-hidden="true">menu_book</mat-icon>
-        <span matListItemTitle>Gramática</span>
-      </a>
-    </mat-nav-list>
-  </mat-sidenav>
+            <a mat-list-item routerLink="/grammar" routerLinkActive="active-link" (click)="closeMobileMenu()">
+                <mat-icon matListItemIcon aria-hidden="true">menu_book</mat-icon>
+                <span matListItemTitle>Gramática</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
 
-  <!-- Área de contenido del dashboard -->
-  <mat-sidenav-content class="dashboard-content-area">
-    <mat-toolbar color="primary" class="dashboard-toolbar">
-      <button
-        mat-icon-button
-        type="button"
-        class="menu-toggle-btn"
-        (click)="sidenav.toggle()"
-        aria-label="Alternar menú lateral"
-      >
-        <mat-icon>menu</mat-icon>
-      </button>
+    <!-- Área de contenido del dashboard -->
+    <mat-sidenav-content class="dashboard-content-area">
+        <mat-toolbar color="primary" class="dashboard-toolbar">
+            <button
+                mat-icon-button
+                type="button"
+                class="menu-toggle-btn"
+                (click)="sidenav.toggle()"
+                aria-label="Alternar menú lateral"
+            >
+                <mat-icon>menu</mat-icon>
+            </button>
 
-      <span class="toolbar-title">English Learning Dashboard</span>
-      <span class="toolbar-spacer"></span>
+            <span class="toolbar-title">English Learning Dashboard</span>
+            <span class="toolbar-spacer"></span>
 
-      <span class="toolbar-badge">Host Shell v1.0</span>
-    </mat-toolbar>
+            <span class="toolbar-badge">Host Shell v1.0</span>
+        </mat-toolbar>
 
-    <main id="main-content" class="content-wrapper" tabindex="-1">
-      <router-outlet />
-    </main>
-  </mat-sidenav-content>
+        <main id="main-content" class="content-wrapper" tabindex="-1">
+            <router-outlet />
+        </main>
+    </mat-sidenav-content>
 </mat-sidenav-container>

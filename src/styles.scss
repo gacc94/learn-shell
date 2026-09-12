@@ -1,54 +1,54 @@
 @use '@angular/material' as mat;
 
 html {
-  height: 100%;
-  @include mat.theme(
-    (
-      color: (
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    )
-  );
+    height: 100%;
+    @include mat.theme(
+        (
+            color: (
+                primary: mat.$azure-palette,
+                tertiary: mat.$blue-palette,
+            ),
+            typography: Roboto,
+            density: 0,
+        )
+    );
 }
 
 body {
-  color-scheme: light;
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  margin: 0;
-  height: 100%;
+    color-scheme: light;
+    background-color: var(--mat-sys-surface);
+    color: var(--mat-sys-on-surface);
+    font: var(--mat-sys-body-medium);
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    height: 100%;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Enlace de accesibilidad para saltar navegación */
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--mat-sys-primary, #006a6a);
-  color: var(--mat-sys-on-primary, #ffffff);
-  padding: 8px 16px;
-  z-index: 1000;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 0 0 4px 0;
-  transition: top 0.2s ease-in-out;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--mat-sys-primary, #006a6a);
+    color: var(--mat-sys-on-primary, #ffffff);
+    padding: 8px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0 0 4px 0;
+    transition: top 0.2s ease-in-out;
 
-  &:focus {
-    top: 0;
-  }
+    &:focus {
+        top: 0;
+    }
 }
 
 /* Utilidades generales de foco accesible */
 :focus-visible {
-  outline: 2px solid var(--mat-sys-primary, #006a6a);
-  outline-offset: 2px;
+    outline: 2px solid var(--mat-sys-primary, #006a6a);
+    outline-offset: 2px;
 }
