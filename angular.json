@@ -95,6 +95,7 @@
                     },
                     "configurations": {
                         "production": {
+                            "baseHref": "/learn-shell/",
                             "budgets": [
                                 {
                                     "type": "initial",

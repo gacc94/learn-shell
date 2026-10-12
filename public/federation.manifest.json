@@ -1,5 +1,3 @@
 {
-    "mf-home": "http://localhost:4201/remoteEntry.json",
-    "mf-shadowing": "http://localhost:4202/remoteEntry.json",
-    "mf-grammar": "http://localhost:4203/remoteEntry.json"
+    "mf-home": "http://localhost:4201/remoteEntry.json"
 }
