@@ -38,7 +38,7 @@ jobs:
         run: cp public/federation.manifest.prod.json dist/learn-shell/browser/federation.manifest.json
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: learn-shell-dist
           path: dist/learn-shell/browser
