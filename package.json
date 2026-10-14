@@ -14,7 +14,7 @@
     "packageManager": "bun@1.4.2",
     "dependencies": {
         "@angular-architects/native-federation": "^22.1.2",
-        "@angular/cdk": "^22.1.6",
+        "@angular/cdk": "^22.2.2",
         "@angular/common": "^22.1.0",
         "@angular/compiler": "^22.1.0",
         "@angular/core": "^22.1.0",
