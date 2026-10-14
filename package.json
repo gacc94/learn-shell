@@ -15,7 +15,7 @@
     "dependencies": {
         "@angular-architects/native-federation": "^22.1.2",
         "@angular/cdk": "^22.1.6",
-        "@angular/common": "^22.1.0",
+        "@angular/common": "^22.2.2",
         "@angular/compiler": "^22.1.0",
         "@angular/core": "^22.1.0",
         "@angular/forms": "^22.1.0",
