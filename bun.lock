@@ -24,7 +24,7 @@
         "@angular/cli": "^22.1.8",
         "@angular/compiler-cli": "^22.1.0",
         "@eslint/js": "^10.0.1",
-        "@softarc/native-federation-orchestrator": "^4.6.0",
+        "@softarc/native-federation-orchestrator": "^4.7.0",
         "angular-eslint": "22.5.0",
         "eslint": "^10.9.1",
         "jsdom": "^28.0.0",
@@ -468,7 +468,7 @@
 
     "@softarc/native-federation": ["@softarc/native-federation@4.5.0", "", { "dependencies": { "@softarc/sheriff-core": "^0.19.6", "chalk": "^6.0.0", "esbuild": "^0.28.0", "fast-glob": "^3.3.3", "json5": "^2.2.3" } }, "sha512-FixGtwyRT7o8nANxecr0UDTZWTzhzLqH+cE3clntzhx/t4BNkNQwqaOZlcyjHNTI6l6nH4zIY4Ct7jaHCjPO3A=="],
 
-    "@softarc/native-federation-orchestrator": ["@softarc/native-federation-orchestrator@4.6.1", "", { "dependencies": { "semver": "^7.7.1" } }, "sha512-n5XZvWCFPeLvZ5y42fH79X9L1MG+BMBLlbhKOxIVXbju+52BAQL6D+NoYOuOPTwtX5wFafwhzAs15bkggF3VSw=="],
+    "@softarc/native-federation-orchestrator": ["@softarc/native-federation-orchestrator@4.7.0", "", { "dependencies": { "semver": "^7.7.1" } }, "sha512-aIRYUSECaNxoGW+bfJJ5zesmIQ5NbAPzrYZgIGvNJXkpWcZgZvadZ7oQtox0D6qeD4q8IS9ovu9MtplyOTGfUw=="],
 
     "@softarc/sheriff-core": ["@softarc/sheriff-core@0.19.6", "", { "peerDependencies": { "typescript": ">=4.8" }, "bin": { "sheriff": "src/bin/main.js" } }, "sha512-KACxHG9sS7kNWgnnBODzdr14kMLMrJVlQKc+tViUP03p2fRwNhESOA49bz51Yn7dro1mbtMmmFjICLmZSJDZZA=="],
 
