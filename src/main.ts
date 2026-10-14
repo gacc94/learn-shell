@@ -1,6 +1,8 @@
 import { initFederation, type NativeFederationResult } from '@angular-architects/native-federation';
 
-const isGitHubPages = typeof window !== 'undefined' && window.location.hostname.endsWith('github.io');
+const isGitHubPages =
+    typeof window !== 'undefined' &&
+    (window.location.hostname === 'gacc94.github.io' || window.location.hostname.endsWith('.github.io'));
 const manifestUrl = isGitHubPages ? 'federation.manifest.prod.json' : 'federation.manifest.json';
 
 initFederation(manifestUrl, {
